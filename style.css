@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.cart{
+  display: flex;
+  align-items: center;
+
+  /*tambien podria funcionarmargin-left: 800px;*/
+  margin-left: auto;
+  padding: 10px 20px;
+  
+}
+.cart i{
+  font-size: 50px;
+  background-color: white;
+  border-radius: 10px;
+  color:#232f3e; 
+ 
+}
+.cart h1{
+  position: absolute;
+  margin-left: 40px;
+  margin-bottom: 70px;
+  background-color: red;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+
+
+
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+}
+/*
+.search-bar {
+  flex-grow: 1;
+  margin: 0 300px;
+  
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+
+.search-bar button {
+  padding: 8px 25px;
+  border: none;
+  background-color: #FF9900;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+*/
+.search-bar {
+  display: flex; /* Añade flexbox para que los elementos se alineen en la misma línea */
+  margin-left: 180px;
+  width: 600px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid black; 
+  width: 70%; /* Calcula el ancho del campo de entrada restando el ancho del botón */
+}
+
+.search-bar button {
+  padding: 10px 25px;
+  border-left: 0px solid black; 
+  border-bottom: 1px solid black; 
+  border-top: 1px solid black; 
+  border-right: 1px solid black; 
+  background-color: #FF9900;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.navbar2{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    background-color: black;
+
+}
+.navbar2 .botton {
+  background-color: #ffffff; /* Green */
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 250px auto; /* Columna para la barra lateral y columna para los productos */
+    gap: 20px; /* Espacio entre la barra lateral y los productos */
+  }
+
+.Shop{
+    display: grid;
+    grid-template-rows: auto auto; /* Columna para la barra lateral y columna para los productos */
+    gap: 20px;      
+    justify-content: center;
+}   
+
+  
+  /* Consulta de medios para ajustar el ancho de las imágenes cuando la pantalla sea más estrecha */
+ 
+.item img{
+    width: 250px;
+}
+
+.Shopbar{
+    text-align: center;
+    color: green
+}
+.groupofimages {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Cuatro columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+    
+  }
+
+  @media (max-width:1400px){
+    .groupofimages {
+        display: grid;
+        grid-template-columns: repeat(4, auto); /* Cuatro columnas de igual tamaño */
+        gap: 20px; /* Espacio entre las imágenes */
+        
+      }
+      .item img{
+        width: 99%;
+    }
+    }
+  @media (max-width:1250px){
+    .groupofimages {
+        display: grid;
+        grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
+        gap: 20px; /* Espacio entre las imágenes */
+        
+      }
+      .item img{
+        width: 280px;
+    }
+    }
+@media (max-width:1249px){
+    .groupofimages {
+        display: grid;
+        grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
+        gap: 20px; /* Espacio entre las imágenes */
+        
+      }
+      .item img{
+        width: 99%;
+    }
+    }
+
+@media (max-width:1000px){
+    .groupofimages {
+       display: grid;
+       grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
+       gap: 20px; /* Espacio entre las imágenes */
+    }
+    .item img{ 
+       width: 220px;
+    }
+}
+
