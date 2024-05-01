@@ -189,7 +189,7 @@ body {
 .cartsquad {
   position: fixed;
   top: 0;
-  right: -300px; /* Inicialmente fuera de la pantalla */
+  right: -400px; /* Inicialmente fuera de la pantalla */
   width: 300px;
   height: 100%;
   background-color: #f4f4f4;
@@ -199,4 +199,41 @@ body {
 
 .cartsquad.open {
   right: 0; /* Mover el carrito a la posición 0 (visible) */
+}
+
+
+.boton {
+  padding: 10px 25px;
+  
+  border-radius: 8px;
+  background-color: orange;
+}
+.contenedordeventa {
+  border: 2px solid black; /* Borde negro de 2px */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  width: 250x; /* Ancho del contenedor */
+}
+.cuadrocompra {
+  background-color: #f0f0f0; /* Color de fondo */
+  margin-top: 10px; /* Margen superior */
+  padding: 10px; /* Espaciado interno */
+}
+.cuadrocompra button {
+  padding: 5px 10px; /* Espaciado interno del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de apuntador */
+}
+.conteiner-carrito {
+  display: flex; /* Utilizamos Flexbox para distribuir los elementos */
+  flex-direction: row; /* Ordenar de izquierda a derecha */
+  justify-content: space-between; /* Distribuir equitativamente los elementos */
+  padding: 5px 10px; /* Espaciado interno */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
 }
