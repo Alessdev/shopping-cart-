@@ -133,7 +133,7 @@ body {
     text-align: center;
     color: green
 }
-.groupofimages {
+.images {
     display: grid;
     grid-template-columns: repeat(4, auto); /* Cuatro columnas de igual tamaño */
     gap: 20px; /* Espacio entre las imágenes */
@@ -141,41 +141,42 @@ body {
   }
 
   @media (max-width:1400px){
-    .groupofimages {
+    .images {
         display: grid;
         grid-template-columns: repeat(4, auto); /* Cuatro columnas de igual tamaño */
         gap: 20px; /* Espacio entre las imágenes */
         
       }
       .item img{
-        width: 99%;
-    }
-    }
-  @media (max-width:1250px){
-    .groupofimages {
-        display: grid;
-        grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
-        gap: 20px; /* Espacio entre las imágenes */
-        
-      }
-      .item img{
-        width: 280px;
-    }
-    }
-@media (max-width:1249px){
-    .groupofimages {
-        display: grid;
-        grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
-        gap: 20px; /* Espacio entre las imágenes */
-        
-      }
-      .item img{
-        width: 99%;
+        width: 100%;
     }
     }
 
+    @media (max-width:1250px){
+      .images {
+          display: grid;
+          grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
+          gap: 20px; /* Espacio entre las imágenes */
+          
+        }
+        .item img{
+          width: 280px;
+      }
+      }
+  @media (max-width:1249px){
+      .images {
+          display: grid;
+          grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
+          gap: 20px; /* Espacio entre las imágenes */
+          
+        }
+        .item img{
+          width: 99%;
+      }
+      }
+
 @media (max-width:1000px){
-    .groupofimages {
+    .images {
        display: grid;
        grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
        gap: 20px; /* Espacio entre las imágenes */
@@ -230,10 +231,61 @@ body {
 .conteiner-carrito {
   display: flex; /* Utilizamos Flexbox para distribuir los elementos */
   flex-direction: row; /* Ordenar de izquierda a derecha */
-  justify-content: space-between; /* Distribuir equitativamente los elementos */
+  align-items: center;
+  
   padding: 5px 10px; /* Espaciado interno */
   background-color: #007bff; /* Color de fondo */
   color: #fff; /* Color del texto */
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
+}
+.inputcar {
+  padding: 10px 25px;
+  border-left: 0px solid black; 
+  border-bottom: 1px solid black; 
+  border-top: 1px solid black; 
+  border-right:0px solid black; 
+  background-color: #ffffff;
+  color: white;
+  border-radius: 0 0px 0px 0;
+  cursor: pointer;
+  width: 5px; /* Ajusta el valor según sea necesario */
+}
+
+
+
+
+.input{
+  margin-right: 1px;
+  border-radius: 4px;
+  
+}
+.conteiner-minus{
+
+  display: flex; /* Utilizamos Flexbox para distribuir los elementos */
+  
+  margin-right: 2px;
+  margin-bottom: px;
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+
+}
+.conteiner-plus{
+  
+  display: flex; /* Utilizamos Flexbox para distribuir los elementos */
+ 
+ 
+  
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+
+}
+.conjunto-cantidad{
+
+  margin-left: auto;
+
 }
