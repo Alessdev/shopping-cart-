@@ -49,5 +49,5 @@ let imagenes = document.getElementById('images')
        </div>
     </div>`
     )
-   }))};
+   }).join(""))};
 Generator(products)
