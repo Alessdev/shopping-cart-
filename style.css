@@ -1,3 +1,27 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -125,9 +149,7 @@ body {
   
   /* Consulta de medios para ajustar el ancho de las imágenes cuando la pantalla sea más estrecha */
  
-.item img{
-    width: 250px;
-}
+
 
 .Shopbar{
     text-align: center;
@@ -151,8 +173,9 @@ body {
         width: 100%;
     }
     }
+ 
 
-    @media (max-width:1250px){
+ @media (max-width:1250px){
       .images {
           display: grid;
           grid-template-columns: repeat(3, auto); /* Cuatro columnas de igual tamaño */
@@ -186,7 +209,6 @@ body {
     }
 }
 
-
 .cartsquad {
   position: fixed;
   top: 0;
@@ -210,16 +232,38 @@ body {
   background-color: orange;
 }
 .contenedordeventa {
+  display: flex;
+  flex-direction: column;
   border: 2px solid black; /* Borde negro de 2px */
   border-radius: 5px; /* Bordes redondeados */
   padding: 10px; /* Espaciado interno */
-  width: 250x; /* Ancho del contenedor */
+  
 }
 .cuadrocompra {
+ 
+  display: flex;
+  flex-direction: column;
   background-color: #f0f0f0; /* Color de fondo */
-  margin-top: 10px; /* Margen superior */
-  padding: 10px; /* Espaciado interno */
+  margin-top: 10px;
 }
+.product-marca{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.precio-compra {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-marca p, .precio-compra p {
+  margin: 10px; /* Eliminar el margen predeterminado de los párrafos */
+}
+
 .cuadrocompra button {
   padding: 5px 10px; /* Espaciado interno del botón */
   background-color: #007bff; /* Color de fondo del botón */
@@ -228,16 +272,22 @@ body {
   border-radius: 5px; /* Bordes redondeados */
   cursor: pointer; /* Cursor de apuntador */
 }
+
+
+/**
+* ! styles for car page
+**/
 .conteiner-carrito {
   display: flex; /* Utilizamos Flexbox para distribuir los elementos */
   flex-direction: row; /* Ordenar de izquierda a derecha */
   align-items: center;
-  
+  height: 25px;
   padding: 5px 10px; /* Espaciado interno */
   background-color: #007bff; /* Color de fondo */
   color: #fff; /* Color del texto */
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 10px;
 }
 .inputcar {
   padding: 10px 25px;
@@ -289,3 +339,6 @@ body {
   margin-left: auto;
 
 }
+
+
+
